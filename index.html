@@ -24,7 +24,9 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
-</head>
+<script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+<audio id="keySound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_a7a18095d6.mp3?filename=keyboard-typing-6030.mp3" preload="auto"></audio>
+
 <body class="text-gray-800" onload="AOS.init()">
   <!-- Navbar -->
   <nav class="bg-white shadow-md p-4 flex justify-between items-center sticky top-0 z-50">
@@ -49,7 +51,14 @@
     waitUntilVisible: true
   }).go();
 </script>
-  <p class="text-lg max-w-xl mb-6">Junior HR Executive passionate about People Management & HR Policies. Focused on fostering a healthy and engaging workplace culture.</p>
+  <p id="typing-home-p" class="text-lg max-w-xl mb-6"></p>
+<script>
+  new TypeIt("#typing-home-p", {
+    strings: "$2",
+    speed: 40,
+    waitUntilVisible: true
+  }).go();
+</script>
   </div>
     <div class="space-x-4 relative z-10">
       <a href="#about" class="btn-primary hover:scale-105 transform transition">About Me</a>
@@ -70,9 +79,14 @@
     waitUntilVisible: true
   }).go();
 </script>
-      <p class="max-w-2xl text-center text-lg mb-6">
-        I’m a passionate and dynamic HR professional with hands-on experience in people management and HR policy implementation. With a strong commitment to nurturing positive workplace cultures, I strive to be the bridge between talent and opportunity.
-      </p>
+      <p id="typing-about-p" class="max-w-2xl text-center text-lg mb-6"></p>
+<script>
+  new TypeIt("#typing-about-p", {
+    strings: "$2",
+    speed: 40,
+    waitUntilVisible: true
+  }).go();
+</script>
       <a href="projects.html" class="btn-primary">View My Projects</a>
     </div>
   </section>
@@ -100,7 +114,14 @@
       <div class="w-full md:w-1/2 md:pr-10 text-right">
         <h3 class="text-xl font-semibold">B.Tech – Computer Science and Engineering</h3>
         <p class="text-gray-600 text-sm">2021 – 2024 | Gayatri Vidya parishad College of Engineering for Women</p>
-        <p class="mt-2 text-gray-700">Active contributor to Google Developer Student Club, certified in Cisco Networking, and participated in extracurriculars like volleyball and seminars.</p>
+        <p class="mt-2 text-gray-700 typed-block"></p>
+<script>
+  new TypeIt('.typed-block', {
+    strings: "$2",
+    speed: 40,
+    waitUntilVisible: true
+  }).go();
+</script>
       </div>
       <div class="hidden md:block w-8 h-8 bg-blue-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
     </div>
@@ -130,7 +151,14 @@
     <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
       <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
         <h3 class="text-xl font-semibold mb-2">Top Performer - HR Intern at SRI Tech Solutions</h3>
-        <p class="text-gray-700">Recognized for exceptional performance and contribution to recruitment processes and people engagement.</p>
+        <p class="text-gray-700 typed-achieve"></p>
+<script>
+  new TypeIt('.typed-achieve', {
+    strings: "$2",
+    speed: 40,
+    waitUntilVisible: true
+  }).go();
+</script>
       </div>
       <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
         <h3 class="text-xl font-semibold mb-2">Women Empowerment Advocate</h3>
@@ -166,8 +194,20 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-100 p-6 text-center text-sm">
-    <p>&copy; 2025 Rohini Kaparapu. All rights reserved.</p>
+  <footer class="bg-gray-100 p-6 text-center text-sm" id="typing-footer">
+    <p id="footer-text"></p>
+<script>
+  const audio = document.getElementById('keySound');
+  new TypeIt("#footer-text", {
+    strings: "© 2025 Rohini Kaparapu. All rights reserved.",
+    speed: 50,
+    afterStep: () => {
+      audio.currentTime = 0;
+      audio.play();
+    },
+    waitUntilVisible: true
+  }).go();
+</script>
     <div class="mt-2">
       <a href="https://www.linkedin.com/in/rohini-kaparapu-junia-06564a205" class="text-blue-500">LinkedIn</a> |
       <a href="https://www.instagram.com/junia_1438" class="text-pink-500">Instagram</a> |
