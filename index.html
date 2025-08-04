@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohini Kaparapu | HR Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .about-bg {
+      background-image: url('Rohini%20Kaparapu.jpeg');
+      background-size: cover;
+      background-position: center;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .btn-primary {
+      @apply bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700 transition;
+    }
+    .btn-secondary {
+      @apply bg-white text-blue-600 px-6 py-2 border border-blue-600 rounded-xl hover:bg-blue-50 transition;
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md p-4 flex justify-between items-center sticky top-0 z-50">
+    <h1 class="text-xl font-bold">Rohini Kaparapu</h1>
+    <div class="space-x-4">
+      <a href="index.html" class="hover:text-blue-600">Home</a>
+      <a href="#about" class="hover:text-blue-600">About</a>
+      <a href="#projects" class="hover:text-blue-600">Projects</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Home Page Content -->
+<section class="h-screen flex flex-col justify-center items-center bg-blue-50 text-center">
+  <img src="Desk.jfif" alt="Desk with computer and chair" class="w-full max-w-md rounded-xl shadow-lg mb-6" />
+  <h2 class="text-4xl font-bold mb-4">Hi, I'm Rohini 👋</h2>
+  <p class="text-lg max-w-xl mb-6">Junior HR Executive passionate about People Management & HR Policies. Focused on fostering a healthy and engaging workplace culture.</p>
+  <div class="space-x-4">
+    <a href="#about" class="btn-primary hover:scale-105 transform transition">About Me</a>
+    <a href="#contact" class="btn-secondary hover:scale-105 transform transition">Contact</a>
+  </div>
+</section>
+
+  <!-- About Page Content -->
+  <section class="h-screen about-bg relative text-white">
+    <div class="overlay absolute inset-0"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full p-8">
+      <h2 class="text-4xl font-bold mb-4">About Me</h2>
+      <p class="max-w-2xl text-center text-lg mb-6">
+        I’m a passionate and dynamic HR professional with hands-on experience in people management and HR policy implementation. With a strong commitment to nurturing positive workplace cultures, I strive to be the bridge between talent and opportunity.
+      </p>
+      <a href="projects.html" class="btn-primary">View My Projects</a>
+    </div>
+  </section>
+
+  
+
+  
+
+  <!-- Achievements Section -->
+  <img src="Achieves.jfif" alt="Trophy for Achievements" class="w-32 mx-auto mb-4" />
+  <section class="bg-gray-50 py-10 px-4">
+    <h2 class="text-3xl font-bold text-center mb-6">Achievements</h2>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Top Performer - HR Intern at SRI Tech Solutions</h3>
+        <p class="text-gray-700">Recognized for exceptional performance and contribution to recruitment processes and people engagement.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Women Empowerment Advocate</h3>
+        <p class="text-gray-700">Active speaker and supporter for women in tech and corporate space, sharing views and inspiring peers.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Public Speaker - College and LinkedIn Influencer</h3>
+        <p class="text-gray-700">Frequent presenter at college events and featured posts on LinkedIn sharing motivational and HR insights.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">GDSC Community Contributor</h3>
+        <p class="text-gray-700">Engaged in events and activities to foster tech and career awareness as part of Google Developer Student Club.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Page Content -->
+  <img src="Get in touch.jfif" alt="Get in Touch" class="w-52 mx-auto mb-6 rounded-xl shadow" />
+  <section class="min-h-screen bg-white py-10 px-4">
+    <h2 class="text-3xl font-bold text-center mb-6">Get in Touch</h2>
+    <div class="max-w-xl mx-auto space-y-4 text-center">
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rohini-kaparapu-junia-06564a205" class="text-blue-600">rohini-kaparapu-junia</a></p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/junia_1438" class="text-pink-600">@junia_1438</a></p>
+      <p><strong>WhatsApp:</strong> <a href="tel:+918790512547" class="text-green-600">+91 8790512547</a></p>
+      <a href="mailto:juniaofficial@gmail.com" class="btn-primary inline-block mt-6">Send an Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 p-6 text-center text-sm">
+    <p>&copy; 2025 Rohini Kaparapu. All rights reserved.</p>
+    <div class="mt-2">
+      <a href="https://www.linkedin.com/in/rohini-kaparapu-junia-06564a205" class="text-blue-500">LinkedIn</a> |
+      <a href="https://www.instagram.com/junia_1438" class="text-pink-500">Instagram</a> |
+      <a href="tel:+918790512547" class="text-green-500">WhatsApp</a>
+    </div>
+  </footer>
+</body>
+</html>
