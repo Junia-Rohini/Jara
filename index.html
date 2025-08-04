@@ -68,28 +68,28 @@
 </section>
 
   <!-- About Page Content -->
-  <section class="h-screen about-bg relative text-white" data-aos="fade-right">
-    <div class="overlay absolute inset-0"></div>
-    <div class="relative z-10 flex flex-col items-center justify-center h-full p-8">
-      <h2 id="typing-about" class="text-4xl font-bold mb-4"></h2>
-<script>
-  new TypeIt("#typing-about", {
-    strings: "About Me",
-    speed: 60,
-    waitUntilVisible: true
-  }).go();
-</script>
-      <p id="typing-about-p" class="max-w-2xl text-center text-lg mb-6"></p>
-<script>
-  new TypeIt("#typing-about-p", {
-    strings: "I'm a Junior HR Executive passionate about people management and HR strategies. With a strong academic foundation and professional curiosity, I’m always eager to learn, grow, and contribute to positive workplace environments.",
-    speed: 40,
-    waitUntilVisible: true
-  }).go();
-</script>
-      <a href="projects.html" class="btn-primary">View My Projects</a>
-    </div>
-  </section>
+  <section class="h-screen bg-white flex flex-col md:flex-row items-center" data-aos="fade-right">
+  <div class="w-full md:w-1/2 h-full bg-cover bg-center" style="background-image: url('Rohini%20Kaparapu.jpeg')"></div>
+  <div class="w-full md:w-1/2 p-10 text-gray-800">
+    <h2 id="typing-about" class="text-4xl font-bold mb-4"></h2>
+    <script>
+      new TypeIt("#typing-about", {
+        strings: "About Me",
+        speed: 60,
+        waitUntilVisible: true
+      }).go();
+    </script>
+    <p id="typing-about-p" class="max-w-2xl text-lg mb-6"></p>
+    <script>
+      new TypeIt("#typing-about-p", {
+        strings: "I'm a Junior HR Executive passionate about people management and HR strategies. With a strong academic foundation and professional curiosity, I’m always eager to learn, grow, and contribute to positive workplace environments.",
+        speed: 40,
+        waitUntilVisible: true
+      }).go();
+    </script>
+    <a href="projects.html" class="btn-primary">View My Projects</a>
+  </div>
+</section>
 
   
 
@@ -188,6 +188,16 @@
     </script>
 
     <form action="#" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      <style>
+        input, textarea {
+          border: 1px solid #ccc;
+          transition: border-color 0.3s;
+        }
+        input:focus, textarea:focus {
+          border-color: #3182ce;
+          outline: none;
+        }
+      </style>
       <input type="text" placeholder="Full Name" class="p-3 rounded text-black" required>
       <input type="email" placeholder="Email Address" class="p-3 rounded text-black" required>
       <input type="text" placeholder="Subject" class="p-3 rounded col-span-1 md:col-span-2 text-black" required>
