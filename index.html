@@ -35,12 +35,17 @@
   </nav>
 
   <!-- Home Page Content -->
-<section class="h-screen flex flex-col justify-center items-center text-center" style="background-image: url('Desk.jfif'); background-size: cover; background-position: center;" >
+<section class="h-screen flex flex-col justify-center items-center text-center text-white relative" style="background-image: url('Desk.jfif'); background-size: cover; background-position: center;">
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  <div class="relative z-10">
+  <img src="Desk.jfif" alt="Desk with computer and chair" class="w-full max-w-md rounded-xl shadow-lg mb-6" />
   <h2 class="text-4xl font-bold mb-4">Hi, I'm Rohini 👋</h2>
   <p class="text-lg max-w-xl mb-6">Junior HR Executive passionate about People Management & HR Policies. Focused on fostering a healthy and engaging workplace culture.</p>
-  <div class="space-x-4">
-    <a href="#about" class="btn-primary hover:scale-105 transform transition">About Me</a>
-    <a href="#contact" class="btn-secondary hover:scale-105 transform transition">Contact</a>
+  </div>
+    <div class="space-x-4 relative z-10">
+      <a href="#about" class="btn-primary hover:scale-105 transform transition">About Me</a>
+      <a href="#contact" class="btn-secondary hover:scale-105 transform transition">Contact</a>
+    </div>
   </div>
 </section>
 
@@ -61,6 +66,7 @@
   
 
   <!-- Achievements Section -->
+  <img src="Achieves.jfif" alt="Trophy for Achievements" class="w-32 mx-auto mb-4" />
   <section class="bg-gray-50 py-10 px-4" style="background-image: url('Achieves.jfif'); background-size: cover; background-position: center;">
     <h2 class="text-3xl font-bold text-center mb-6">Achievements</h2>
     <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
@@ -84,13 +90,14 @@
   </section>
 
   <!-- Contact Page Content -->
+  <img src="Get in touch.jfif" alt="Get in Touch" class="w-52 mx-auto mb-6 rounded-xl shadow" />
   <section class="min-h-screen py-10 px-4" style="background-image: url('Get in touch.jfif'); background-size: cover; background-position: center;">
     <h2 class="text-3xl font-bold text-center mb-6">Get in Touch</h2>
-    <div class="max-w-xl mx-auto space-y-4 text-center">
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rohini-kaparapu-junia-06564a205" class="text-blue-600">rohini-kaparapu-junia</a></p>
-      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/junia_1438" class="text-pink-600">@junia_1438</a></p>
-      <p><strong>WhatsApp:</strong> <a href="tel:+918790512547" class="text-green-600">+91 8790512547</a></p>
-      <a href="mailto:juniaofficial@gmail.com" class="btn-primary inline-block mt-6">Send an Email</a>
+    <div class="max-w-xl mx-auto space-y-4 text-center text-white">
+      <p><strong><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" class="inline w-5 h-5 mr-2">LinkedIn:</strong> <a href="https://www.linkedin.com/in/rohini-kaparapu-junia-06564a205" class="text-blue-300 underline">rohini-kaparapu-junia</a></p>
+      <p><strong><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" class="inline w-5 h-5 mr-2">Instagram:</strong> <a href="https://www.instagram.com/junia_1438" class="text-pink-300 underline">@junia_1438</a></p>
+      <p><strong><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" alt="WhatsApp" class="inline w-5 h-5 mr-2">WhatsApp:</strong> <a href="tel:+918790512547" class="text-green-300 underline">+91 8790512547</a></p>
+      <a href="mailto:Careers@sritechsolutions.com" class="btn-primary inline-block mt-6">Send an Email</a>
     </div>
   </section>
 
