@@ -23,6 +23,7 @@
   </style>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
 </head>
 <body class="text-gray-800" onload="AOS.init()">
   <!-- Navbar -->
@@ -40,7 +41,14 @@
 <section class="h-screen flex flex-col justify-center items-center text-center text-white relative" style="background-image: url('Desk.jfif'); background-size: cover; background-position: center;" data-aos="fade-up">
   <div class="absolute inset-0 bg-black bg-opacity-50"></div>
   <div class="relative z-10">
-  <h2 class="text-4xl font-bold mb-4">Hi, I'm Rohini 👋</h2>
+  <h2 id="typing-home" class="text-4xl font-bold mb-4"></h2>
+<script>
+  new TypeIt("#typing-home", {
+    strings: "Hi, I'm Rohini 👋",
+    speed: 60,
+    waitUntilVisible: true
+  }).go();
+</script>
   <p class="text-lg max-w-xl mb-6">Junior HR Executive passionate about People Management & HR Policies. Focused on fostering a healthy and engaging workplace culture.</p>
   </div>
     <div class="space-x-4 relative z-10">
@@ -54,7 +62,14 @@
   <section class="h-screen about-bg relative text-white" data-aos="fade-right">
     <div class="overlay absolute inset-0"></div>
     <div class="relative z-10 flex flex-col items-center justify-center h-full p-8">
-      <h2 class="text-4xl font-bold mb-4">About Me</h2>
+      <h2 id="typing-about" class="text-4xl font-bold mb-4"></h2>
+<script>
+  new TypeIt("#typing-about", {
+    strings: "About Me",
+    speed: 60,
+    waitUntilVisible: true
+  }).go();
+</script>
       <p class="max-w-2xl text-center text-lg mb-6">
         I’m a passionate and dynamic HR professional with hands-on experience in people management and HR policy implementation. With a strong commitment to nurturing positive workplace cultures, I strive to be the bridge between talent and opportunity.
       </p>
@@ -68,7 +83,14 @@
 
   <!-- Education & Experience Section -->
 <section class="bg-white py-10 px-4">
-  <h2 class="text-3xl font-bold text-center mb-12">Education & Experience</h2>
+  <h2 id="typing-edu" class="text-3xl font-bold text-center mb-12"></h2>
+<script>
+  new TypeIt("#typing-edu", {
+    strings: "Education & Experience",
+    speed: 60,
+    waitUntilVisible: true
+  }).go();
+</script>
   <div class="max-w-4xl mx-auto relative">
     <!-- Vertical line -->
     <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-500"></div>
@@ -97,7 +119,14 @@
 
 <!-- Achievements Section -->
   <section class="bg-gray-50 py-10 px-4" style="background-image: url('Achieves.jfif'); background-size: cover; background-position: center;" data-aos="zoom-in">
-    <h2 class="text-3xl font-bold text-center mb-6">Achievements</h2>
+    <h2 id="typing-achieve" class="text-3xl font-bold text-center mb-6"></h2>
+<script>
+  new TypeIt("#typing-achieve", {
+    strings: "Achievements",
+    speed: 60,
+    waitUntilVisible: true
+  }).go();
+</script>
     <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
       <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
         <h3 class="text-xl font-semibold mb-2">Top Performer - HR Intern at SRI Tech Solutions</h3>
@@ -120,7 +149,14 @@
 
   <!-- Contact Page Content -->
   <section class="min-h-screen py-10 px-4" style="background-image: url('Get in touch.jfif'); background-size: cover; background-position: center;" data-aos="fade-up-left">
-    <h2 class="text-3xl font-bold text-center mb-6">Get in Touch</h2>
+    <h2 id="typing-contact" class="text-3xl font-bold text-center mb-6"></h2>
+<script>
+  new TypeIt("#typing-contact", {
+    strings: "Get in Touch",
+    speed: 60,
+    waitUntilVisible: true
+  }).go();
+</script>
     <div class="max-w-xl mx-auto space-y-4 text-center text-white">
       <p><strong><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" class="inline w-5 h-5 mr-2">LinkedIn:</strong> <a href="https://www.linkedin.com/in/rohini-kaparapu-junia-06564a205" class="text-blue-300 underline">rohini-kaparapu-junia</a></p>
       <p><strong><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" class="inline w-5 h-5 mr-2">Instagram:</strong> <a href="https://www.instagram.com/junia_1438" class="text-pink-300 underline">@junia_1438</a></p>
